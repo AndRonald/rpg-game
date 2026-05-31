@@ -18,6 +18,7 @@ Jogo cooperativo local 2D desenvolvido em Godot 4, onde dois jogadores competem 
 |---|---|
 | Pedro Augusto Brito Castilho Pereira | 100954 |
 | Ronald Viana Araújo | 102648 |
+| João Pedro de Jesus Narcizo | 100006 |
 
 ---
 
