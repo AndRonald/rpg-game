@@ -19,6 +19,10 @@ run/main_scene="uid://dknob4uysc3rv"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[global_group]
+
+player=""
+
 [input]
 
 left={
@@ -50,6 +54,8 @@ attack={
 [layer_names]
 
 2d_physics/layer_1="Enviroment"
+2d_physics/layer_6="enemy_damage"
+2d_physics/layer_7="player_damage"
 
 [rendering]
 
