@@ -463,6 +463,15 @@ tile_set = SubResource("TileSet_l4ftj")
 [node name="Enemies" type="Node2D" parent="." unique_id=1914477320]
 y_sort_enabled = true
 
+[node name="Enemy3" parent="Enemies" unique_id=892986572 instance=ExtResource("17_r6tr0")]
+position = Vector2(-75, 281)
+
+[node name="Enemy4" parent="Enemies" unique_id=437455239 instance=ExtResource("17_r6tr0")]
+position = Vector2(7, 165)
+
+[node name="Enemy2" parent="Enemies" unique_id=309098857 instance=ExtResource("17_r6tr0")]
+position = Vector2(-318, 115)
+
 [node name="Enemy" parent="Enemies" unique_id=176810660 instance=ExtResource("17_r6tr0")]
 position = Vector2(-352, 245)
 
@@ -470,5 +479,5 @@ position = Vector2(-352, 245)
 unique_name_in_owner = true
 position = Vector2(-79, 310)
 
-[node name="Player" parent="." unique_id=892986572 instance=ExtResource("14_8aenk")]
+[node name="Player" parent="." unique_id=7170438 instance=ExtResource("14_8aenk")]
 position = Vector2(-1037, 625)
