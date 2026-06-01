@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal died(exp: int)
+
 enum State{
 	IDLE,
 	CHASE,
@@ -14,7 +16,8 @@ enum State{
 @export var attack_speed: float = 1.0
 @export var hitpoints:int = 180
 @export var aggro_range: float = 256.0
-@export var attack_range: float = 80.0 
+@export var attack_range: float = 70.0
+@export var exp_reward: int = 600 
 @export_category("Related Scenes")
 @export var death_packed: PackedScene
 
@@ -113,6 +116,7 @@ func take_damage(damage_taken: int) -> void:
 
 
 func death() -> void:
+	died.emit(exp_reward)
 	var death_scene: Node2D = death_packed.instantiate()
 	get_parent().add_child(death_scene)
 	death_scene.global_position = global_position + Vector2(0.0, -32.0)
