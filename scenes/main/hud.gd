@@ -1,12 +1,24 @@
 extends Control
 
 func _ready() -> void:
-	update_level_indicator()
+	pass
 
 
-func update_hp_bar(new_value: int) -> void:
+# PLAYER 1
+
+func update_p1_hp(new_value: float) -> void:
 	%HitpointsBar.value = new_value
-	
 
-func update_level_indicator() -> void:
-	%CurrentLevel.set_text(str(PlayerData.level))
+
+func update_p1_level(level: int) -> void:
+	$LevelIndicator/CurrentLevel.text = str(level)
+
+
+# PLAYER 2
+
+func update_p2_hp(new_value: float) -> void:
+	$Hitpoints2/HitpointsBar.value = new_value
+
+
+func update_p2_level(level: int) -> void:
+	$LevelIndicator2/CurrentLevel.text = str(level)

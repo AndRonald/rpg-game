@@ -53,58 +53,6 @@ text = "New Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Settings" type="TextureButton" parent="VBoxContainer" unique_id=750905364]
-custom_minimum_size = Vector2(450, 150)
-layout_mode = 2
-size_flags_horizontal = 4
-texture_normal = ExtResource("1_1g8jr")
-texture_pressed = ExtResource("2_m1kxf")
-texture_hover = ExtResource("3_x2yvf")
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="VBoxContainer/Settings" unique_id=1456795573]
-custom_minimum_size = Vector2(0, 120)
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 23.0
-grow_horizontal = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_constants/shadow_outline_size = 16
-theme_override_fonts/font = ExtResource("4_m1kxf")
-theme_override_font_sizes/font_size = 60
-text = "Settings"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="About" type="TextureButton" parent="VBoxContainer" unique_id=1542257120]
-custom_minimum_size = Vector2(450, 150)
-layout_mode = 2
-size_flags_horizontal = 4
-texture_normal = ExtResource("1_1g8jr")
-texture_pressed = ExtResource("2_m1kxf")
-texture_hover = ExtResource("3_x2yvf")
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="VBoxContainer/About" unique_id=867948583]
-custom_minimum_size = Vector2(0, 120)
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 23.0
-grow_horizontal = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.69411767)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_constants/shadow_outline_size = 16
-theme_override_fonts/font = ExtResource("4_m1kxf")
-theme_override_font_sizes/font_size = 60
-text = "About"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Spacer" type="Control" parent="VBoxContainer" unique_id=56683293]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
@@ -136,6 +84,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
-[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="VBoxContainer/About" to="." method="_on_about_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
